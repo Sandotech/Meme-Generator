@@ -1,0 +1,38 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+    gap: 16px;
+}
+
+.form--input-text-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 17px;
+    width: 100%;
+}
+
+.form--input-text{
+    height: 35px;
+    width: 100%;
+    border: 1px solid #D5D4D8;
+    border-radius: 5px;
+}
+
+.form--submit-button{
+    display: grid;
+    place-content: center;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.1em;
+    border-radius: 5px;
+    border: none;
+}
+
+@media only screen and (max-width: 600px){
+    .form--input-text-container{
+        flex-direction: column;
+    }
+}

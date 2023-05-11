@@ -1,0 +1,23 @@
+@font-face{
+    src: url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap'), url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+    font-family: 'Karla', sans-serif, 'Inter', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+/* Vars */
+
+.purple-background{
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}
+
+.white-font{
+    color: #FFFFFF;
+}
