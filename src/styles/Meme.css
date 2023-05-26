@@ -1,15 +1,12 @@
-.form{
-    display: flex;
-    flex-direction: column;
+main{
     padding: 36px;
-    gap: 16px;
 }
 
-.form--input-text-container{
-    display: flex;
-    justify-content: space-between;
-    gap: 17px;
-    width: 100%;
+.form{
+    display: grid;
+    grid-template: 48px 48px / 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 17px;
 }
 
 .form--input-text{
@@ -21,9 +18,7 @@
 }
 
 .form--submit-button{
-    display: grid;
-    place-content: center;
-    padding: 10px;
+    grid-column: 1 / -1;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
@@ -31,6 +26,45 @@
     border-radius: 5px;
     border: none;
     cursor: pointer;
+}
+
+.meme{
+    position: relative;
+}
+
+.meme--image{
+    max-width: 100%;
+    border-radius: 3px;
+}
+
+.meme--text{
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    color: white;
+    text-shadow: 
+        2px 2px 0 #000000,
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000,
+        0 2px 0 #000000,
+        2px 0 0 #000000,
+        0 -2px 0 #000000,
+        -2px 0 0 #000000,
+        2px 2px 5pc #000000
+}
+
+.bottom{
+    bottom: 0;
+}
+
+.top{
+    top: 0;
 }
 
 /* @media only screen and (max-width: 600px){
